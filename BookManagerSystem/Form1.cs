@@ -15,7 +15,7 @@ namespace BookManagerSystem
         public Form1()
         {
             InitializeComponent();
-            
+            MessageBox.Show("吴猛");
         }
     }
 }

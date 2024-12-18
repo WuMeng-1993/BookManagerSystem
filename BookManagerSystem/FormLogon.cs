@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace BookManagerSystem
 {
-    public partial class Form1 : Form
+    public partial class FormLogon : Form
     {
-        public Form1()
+        public FormLogon()
         {
             InitializeComponent();
-        }
-
-        private void btnLogon_Click(object sender, EventArgs e)
-        {
-            FormLogon formLogon = new FormLogon();
-            formLogon.ShowDialog();
         }
     }
 }

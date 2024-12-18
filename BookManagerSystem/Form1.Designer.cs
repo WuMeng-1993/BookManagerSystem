@@ -128,6 +128,7 @@
             this.btnLogon.TabIndex = 8;
             this.btnLogon.Text = "注册";
             this.btnLogon.UseVisualStyleBackColor = true;
+            this.btnLogon.Click += new System.EventHandler(this.btnLogon_Click);
             // 
             // Form1
             // 

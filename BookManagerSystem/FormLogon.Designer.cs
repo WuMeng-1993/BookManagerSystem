@@ -145,6 +145,7 @@
             this.btnConfirm.TabIndex = 10;
             this.btnConfirm.Text = "确认";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 
@@ -156,6 +157,7 @@
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // tbAgainPwd
             // 
@@ -211,7 +213,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogon";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLogon";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,7 +15,7 @@ namespace BookManagerSystem
         // 链接数据库
         public SqlConnection connect()
         {
-            string str = @"Data Source=.;Initial Catalog=BookMS;Integrated Security=True;Trust Server Certificate=True";
+            string str = @"Data Source=.;Initial Catalog=BookMS;Integrated Security=True";
             sc = new SqlConnection(str); sc.Open();
             return sc;
         }

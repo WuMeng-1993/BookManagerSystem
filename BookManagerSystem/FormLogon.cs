@@ -94,10 +94,10 @@ namespace BookManagerSystem
                 return;
             }
 
-            sql = $"insert into T_User values('{id}','{name}','{pwd}','{sex}','{idCard}','{tel}','1')";
+            sql = $"insert into T_User values('{++id}','{name}','{pwd}','{sex}','{idCard}','{tel}','1')";
             if (dao.Execute(sql) > 0)
             {
-                MessageBox.Show("注册成功", "信息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"注册成功, 账号是{id}", "信息", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else 
             {

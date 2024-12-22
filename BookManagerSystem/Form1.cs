@@ -22,5 +22,18 @@ namespace BookManagerSystem
             FormLogon formLogon = new FormLogon();
             formLogon.ShowDialog();
         }
+
+        /// <summary>
+        /// 退出
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认退出吗？", "消息", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes) { 
+                this.Close();
+            }
+        }
     }
 }

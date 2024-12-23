@@ -84,6 +84,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "登录";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnExit
             // 
@@ -99,6 +100,7 @@
             // rbUser
             // 
             this.rbUser.AutoSize = true;
+            this.rbUser.Checked = true;
             this.rbUser.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rbUser.Location = new System.Drawing.Point(308, 227);
             this.rbUser.Name = "rbUser";
@@ -116,7 +118,6 @@
             this.rbAdmin.Name = "rbAdmin";
             this.rbAdmin.Size = new System.Drawing.Size(76, 26);
             this.rbAdmin.TabIndex = 7;
-            this.rbAdmin.TabStop = true;
             this.rbAdmin.Text = "管理员";
             this.rbAdmin.UseVisualStyleBackColor = true;
             // 

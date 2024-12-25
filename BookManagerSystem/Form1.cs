@@ -56,40 +56,6 @@ namespace BookManagerSystem
         }
 
         /// <summary>
-        /// 用户登陆
-        /// </summary>
-        private void UserLogin()
-        {
-            int id = int.Parse(tbAccount.Text);
-            string password = tbPassword.Text;
-
-            Dao dao = new Dao();
-            dao.connect();
-            string sql = $"select * from T_User where Uid = {id} and Pwd = {password}";
-            SqlDataReader reader = dao.read(sql);
-            if (reader.Read())
-            {
-                Form1.id = id;
-                sql = $"select Uname from T_User where Uid = {id}";
-                reader = dao.read(sql);
-                if (reader.Read())
-                {
-                    Form1.name = reader["Uname"].ToString();
-
-                    reader.Close();
-                    dao.Daoclose();
-
-                    FormUser formUser = new FormUser();
-                    formUser.Show();
-                }
-            }
-            else
-            {
-                MessageBox.Show("账号或密码错误", "消息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        /// <summary>
         /// 注册
         /// </summary>
         /// <param name="sender"></param>
@@ -137,6 +103,41 @@ namespace BookManagerSystem
             if (rbUser.Checked)
             {
                 UserLogin();
+            }
+        }
+
+        /// <summary>
+        /// 用户登陆
+        /// </summary>
+        private void UserLogin()
+        {
+            int id = int.Parse(tbAccount.Text);
+            string password = tbPassword.Text;
+
+            Dao dao = new Dao();
+            dao.connect();
+            string sql = $"select * from T_User where Uid = {id} and Pwd = {password}";
+            SqlDataReader reader = dao.read(sql);
+            if (reader.Read())
+            {
+                Form1.id = id;
+                sql = $"select Uname from T_User where Uid = {id}";
+                reader = dao.read(sql);
+                if (reader.Read())
+                {
+                    Form1.name = reader["Uname"].ToString();
+
+                    reader.Close();
+                    dao.Daoclose();
+
+                    FormUser formUser = new FormUser();
+                    formUser.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("账号或密码错误", "消息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

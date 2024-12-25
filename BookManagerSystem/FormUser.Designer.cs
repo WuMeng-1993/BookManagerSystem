@@ -39,7 +39,7 @@
             this.查看评价ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统反馈ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.反馈到管理员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.租借管理ToolStripMenuItem,
             this.图书评价ToolStripMenuItem,
             this.系统反馈ToolStripMenuItem,
-            this.退出登录ToolStripMenuItem});
+            this.MenuItemLogout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 34);
@@ -71,13 +71,13 @@
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
             // 
             // 注销账号ToolStripMenuItem
             // 
             this.注销账号ToolStripMenuItem.Name = "注销账号ToolStripMenuItem";
-            this.注销账号ToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.注销账号ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.注销账号ToolStripMenuItem.Text = "注销账号";
             // 
             // 租借管理ToolStripMenuItem
@@ -92,13 +92,13 @@
             // 租借图书ToolStripMenuItem
             // 
             this.租借图书ToolStripMenuItem.Name = "租借图书ToolStripMenuItem";
-            this.租借图书ToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.租借图书ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.租借图书ToolStripMenuItem.Text = "租借图书";
             // 
             // 归还图书ToolStripMenuItem
             // 
             this.归还图书ToolStripMenuItem.Name = "归还图书ToolStripMenuItem";
-            this.归还图书ToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.归还图书ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.归还图书ToolStripMenuItem.Text = "归还图书";
             // 
             // 图书评价ToolStripMenuItem
@@ -112,7 +112,7 @@
             // 查看评价ToolStripMenuItem
             // 
             this.查看评价ToolStripMenuItem.Name = "查看评价ToolStripMenuItem";
-            this.查看评价ToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.查看评价ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.查看评价ToolStripMenuItem.Text = "查看评价";
             // 
             // 系统反馈ToolStripMenuItem
@@ -129,12 +129,13 @@
             this.反馈到管理员ToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
             this.反馈到管理员ToolStripMenuItem.Text = "反馈到管理员";
             // 
-            // 退出登录ToolStripMenuItem
+            // MenuItemLogout
             // 
-            this.退出登录ToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
-            this.退出登录ToolStripMenuItem.Name = "退出登录ToolStripMenuItem";
-            this.退出登录ToolStripMenuItem.Size = new System.Drawing.Size(100, 30);
-            this.退出登录ToolStripMenuItem.Text = "退出登录";
+            this.MenuItemLogout.ForeColor = System.Drawing.Color.Red;
+            this.MenuItemLogout.Name = "MenuItemLogout";
+            this.MenuItemLogout.Size = new System.Drawing.Size(100, 30);
+            this.MenuItemLogout.Text = "退出登录";
+            this.MenuItemLogout.Click += new System.EventHandler(this.MenuItemLogout_Click);
             // 
             // label1
             // 
@@ -181,7 +182,7 @@
         private System.Windows.Forms.ToolStripMenuItem 查看评价ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 系统反馈ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 反馈到管理员ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退出登录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemLogout;
         private System.Windows.Forms.Label label1;
     }
 }

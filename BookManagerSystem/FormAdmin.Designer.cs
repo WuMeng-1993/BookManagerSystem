@@ -43,7 +43,7 @@
             this.用户反馈ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书评价管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.消息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +57,7 @@
             this.业务管理ToolStripMenuItem,
             this.图书管理ToolStripMenuItem,
             this.用户反馈ToolStripMenuItem,
-            this.退出登录ToolStripMenuItem});
+            this.MenuItemLogout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -163,12 +163,13 @@
             this.消息管理ToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
             this.消息管理ToolStripMenuItem.Text = "消息管理";
             // 
-            // 退出登录ToolStripMenuItem
+            // MenuItemLogout
             // 
-            this.退出登录ToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
-            this.退出登录ToolStripMenuItem.Name = "退出登录ToolStripMenuItem";
-            this.退出登录ToolStripMenuItem.Size = new System.Drawing.Size(100, 30);
-            this.退出登录ToolStripMenuItem.Text = "退出登录";
+            this.MenuItemLogout.ForeColor = System.Drawing.Color.Red;
+            this.MenuItemLogout.Name = "MenuItemLogout";
+            this.MenuItemLogout.Size = new System.Drawing.Size(100, 30);
+            this.MenuItemLogout.Text = "退出登录";
+            this.MenuItemLogout.Click += new System.EventHandler(this.MenuItemLogout_Click);
             // 
             // label1
             // 
@@ -219,7 +220,7 @@
         private System.Windows.Forms.ToolStripMenuItem 用户反馈ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 图书评价管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 消息管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退出登录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemLogout;
         private System.Windows.Forms.Label label1;
     }
 }

@@ -24,7 +24,7 @@ namespace BookManagerSystem
         /// <param name="e"></param>
         private void FormUser_Load(object sender, EventArgs e)
         {
-
+            this.label1.Text = $"欢迎你：{Form1.name}  {Form1.id}";
         }
 
         /// <summary>

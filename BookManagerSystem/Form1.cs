@@ -18,42 +18,9 @@ namespace BookManagerSystem
             InitializeComponent();
         }
 
+        // 静态变量
         public static int id;
         public static string name;
-
-        /// <summary>
-        /// 管理员登录
-        /// </summary>
-        private void AdminLogin()
-        {
-            int id = int.Parse(tbAccount.Text);
-            string password = tbPassword.Text;
-
-            Dao dao = new Dao();
-            dao.connect();
-            string sql = $"select * from T_Admin where AdminID = {id} and Password = {password}";
-            SqlDataReader reader = dao.read(sql);
-            if (reader.Read())
-            {
-                Form1.id = id;
-                sql = $"select Name from T_Admin where AdminID = {id}";
-                reader = dao.read(sql);
-                if (reader.Read())
-                {
-                    Form1.name = reader["Name"].ToString();
-
-                    reader.Close();
-                    dao.Daoclose();
-
-                    FormAdmin formAdmin = new FormAdmin();
-                    formAdmin.Show();
-                }
-            }
-            else 
-            {
-                MessageBox.Show("账号或密码错误", "消息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         /// <summary>
         /// 注册
@@ -132,7 +99,40 @@ namespace BookManagerSystem
 
                     FormUser formUser = new FormUser();
                     formUser.Show();
-                    this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("账号或密码错误", "消息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        /// <summary>
+        /// 管理员登录
+        /// </summary>
+        private void AdminLogin()
+        {
+            int id = int.Parse(tbAccount.Text);
+            string password = tbPassword.Text;
+
+            Dao dao = new Dao();
+            dao.connect();
+            string sql = $"select * from T_Admin where AdminID = {id} and Password = {password}";
+            SqlDataReader reader = dao.read(sql);
+            if (reader.Read())
+            {
+                Form1.id = id;
+                sql = $"select Name from T_Admin where AdminID = {id}";
+                reader = dao.read(sql);
+                if (reader.Read())
+                {
+                    Form1.name = reader["Name"].ToString();
+
+                    reader.Close();
+                    dao.Daoclose();
+
+                    FormAdmin formAdmin = new FormAdmin();
+                    formAdmin.Show();
                 }
             }
             else

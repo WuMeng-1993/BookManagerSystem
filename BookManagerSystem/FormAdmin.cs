@@ -30,5 +30,15 @@ namespace BookManagerSystem
                 this.Close();
             }
         }
+
+        /// <summary>
+        /// 窗体加载事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+            this.label1.Text = $"欢迎你：{Form1.name} {Form1.id}";
+        }
     }
 }

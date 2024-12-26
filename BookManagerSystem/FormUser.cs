@@ -17,6 +17,11 @@ namespace BookManagerSystem
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 窗体加载事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormUser_Load(object sender, EventArgs e)
         {
 

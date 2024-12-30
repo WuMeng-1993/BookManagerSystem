@@ -31,7 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.个人信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.注销账号ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemLogOff = new System.Windows.Forms.ToolStripMenuItem();
             this.租借管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.租借图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.归还图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +63,7 @@
             // 
             this.个人信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.修改密码ToolStripMenuItem,
-            this.注销账号ToolStripMenuItem});
+            this.MenuItemLogOff});
             this.个人信息管理ToolStripMenuItem.Name = "个人信息管理ToolStripMenuItem";
             this.个人信息管理ToolStripMenuItem.Size = new System.Drawing.Size(138, 30);
             this.个人信息管理ToolStripMenuItem.Text = "个人信息管理";
@@ -71,14 +71,15 @@
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
             // 
-            // 注销账号ToolStripMenuItem
+            // MenuItemLogOff
             // 
-            this.注销账号ToolStripMenuItem.Name = "注销账号ToolStripMenuItem";
-            this.注销账号ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
-            this.注销账号ToolStripMenuItem.Text = "注销账号";
+            this.MenuItemLogOff.Name = "MenuItemLogOff";
+            this.MenuItemLogOff.Size = new System.Drawing.Size(180, 30);
+            this.MenuItemLogOff.Text = "注销账号";
+            this.MenuItemLogOff.Click += new System.EventHandler(this.MenuItemLogOff_Click);
             // 
             // 租借管理ToolStripMenuItem
             // 
@@ -174,7 +175,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 个人信息管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改密码ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 注销账号ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemLogOff;
         private System.Windows.Forms.ToolStripMenuItem 租借管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 租借图书ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 归还图书ToolStripMenuItem;

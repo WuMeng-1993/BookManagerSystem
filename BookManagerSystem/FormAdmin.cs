@@ -40,5 +40,37 @@ namespace BookManagerSystem
         {
             this.label1.Text = $"欢迎你：{Form1.name} {Form1.id}";
         }
+
+        /// <summary>
+        /// 管理员的注销账号
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItemLogOff_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确定要注销账号吗？", "消息", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                int id = Form1.id;
+
+                Dao dao = new Dao();
+                dao.connect();
+
+                string sql = $"delete T_Admin where AdminID = {id}";
+                int n = dao.Execute(sql);
+                if (n > 0)
+                {
+                    MessageBox.Show("注销成功", "消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dao.Daoclose();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("注销失败", "消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dao.Daoclose();
+                    this.Close();
+                }
+            }
+        }
     }
 }

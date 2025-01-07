@@ -72,5 +72,16 @@ namespace BookManagerSystem
                 }
             }
         }
+
+        /// <summary>
+        /// 修改密码
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItemUpdatePwd_Click(object sender, EventArgs e)
+        {
+            FormUpdatePwd_Admin formUpdatePwd_Admin = new FormUpdatePwd_Admin();
+            formUpdatePwd_Admin.ShowDialog();
+        }
     }
 }

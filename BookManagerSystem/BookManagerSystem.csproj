@@ -73,6 +73,12 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChangePassword_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePassword_User.Designer.cs">
+      <DependentUpon>FormChangePassword_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePassword_User.resx">
+      <DependentUpon>FormChangePassword_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogon.resx">
       <DependentUpon>FormLogon.cs</DependentUpon>

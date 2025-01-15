@@ -71,5 +71,19 @@ namespace BookManagerSystem
                 }
             }
         }
+
+        /// <summary>
+        /// 修改密码
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItemChangePassword_Click(object sender, EventArgs e)
+        {
+            // 打开修改密码窗体
+            FormChangePassword_User formChangePassword_User = new FormChangePassword_User();
+            formChangePassword_User.Show();
+
+
+        }
     }
 }

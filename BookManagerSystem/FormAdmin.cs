@@ -83,5 +83,16 @@ namespace BookManagerSystem
             FormUpdatePwd_Admin formUpdatePwd_Admin = new FormUpdatePwd_Admin();
             formUpdatePwd_Admin.ShowDialog();
         }
+
+        /// <summary>
+        /// 添加图书
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItemAddBook_Click(object sender, EventArgs e)
+        {
+            FormAddBook formAddBook = new FormAddBook();
+            formAddBook.ShowDialog();
+        }
     }
 }

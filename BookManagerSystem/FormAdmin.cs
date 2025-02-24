@@ -94,5 +94,38 @@ namespace BookManagerSystem
             FormAddBook formAddBook = new FormAddBook();
             formAddBook.ShowDialog();
         }
+
+        /// <summary>
+        /// 修改图书
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void itemModifyBook_Click(object sender, EventArgs e)
+        {
+            FormManager bookFormManager = new FormManager();
+            bookFormManager.ShowDialog();
+        }
+
+        /// <summary>
+        /// 下架图书
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void itemRemoveBook_Click(object sender, EventArgs e)
+        {
+            FormManager bookFormManager = new FormManager();
+            bookFormManager.ShowDialog();
+        }
+
+        /// <summary>
+        /// 搜索图书
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void itemSearchBook_Click(object sender, EventArgs e)
+        {
+            FormManager bookFormManager = new FormManager();
+            bookFormManager.ShowDialog();
+        }
     }
 }

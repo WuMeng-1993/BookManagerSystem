@@ -37,9 +37,9 @@
             this.用户信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemAddBook = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.下架图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.搜索图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemModifyBook = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemRemoveBook = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemSearchBook = new System.Windows.Forms.ToolStripMenuItem();
             this.用户反馈ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书评价管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.消息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,20 +71,20 @@
             this.MenuItemUpdatePwd,
             this.MenuItemLogOff});
             this.个人信息管理ToolStripMenuItem.Name = "个人信息管理ToolStripMenuItem";
-            this.个人信息管理ToolStripMenuItem.Size = new System.Drawing.Size(138, 30);
+            this.个人信息管理ToolStripMenuItem.Size = new System.Drawing.Size(147, 23);
             this.个人信息管理ToolStripMenuItem.Text = "个人信息管理";
             // 
             // MenuItemUpdatePwd
             // 
             this.MenuItemUpdatePwd.Name = "MenuItemUpdatePwd";
-            this.MenuItemUpdatePwd.Size = new System.Drawing.Size(160, 30);
+            this.MenuItemUpdatePwd.Size = new System.Drawing.Size(162, 24);
             this.MenuItemUpdatePwd.Text = "修改密码";
             this.MenuItemUpdatePwd.Click += new System.EventHandler(this.MenuItemUpdatePwd_Click);
             // 
             // MenuItemLogOff
             // 
             this.MenuItemLogOff.Name = "MenuItemLogOff";
-            this.MenuItemLogOff.Size = new System.Drawing.Size(160, 30);
+            this.MenuItemLogOff.Size = new System.Drawing.Size(162, 24);
             this.MenuItemLogOff.Text = "注销账号";
             this.MenuItemLogOff.Click += new System.EventHandler(this.MenuItemLogOff_Click);
             // 
@@ -94,56 +94,59 @@
             this.查看用户租借情况ToolStripMenuItem,
             this.用户信息管理ToolStripMenuItem});
             this.业务管理ToolStripMenuItem.Name = "业务管理ToolStripMenuItem";
-            this.业务管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 30);
+            this.业务管理ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
             this.业务管理ToolStripMenuItem.Text = "业务管理";
             // 
             // 查看用户租借情况ToolStripMenuItem
             // 
             this.查看用户租借情况ToolStripMenuItem.Name = "查看用户租借情况ToolStripMenuItem";
-            this.查看用户租借情况ToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
+            this.查看用户租借情况ToolStripMenuItem.Size = new System.Drawing.Size(246, 24);
             this.查看用户租借情况ToolStripMenuItem.Text = "查看用户租借情况";
             // 
             // 用户信息管理ToolStripMenuItem
             // 
             this.用户信息管理ToolStripMenuItem.Name = "用户信息管理ToolStripMenuItem";
-            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
+            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(246, 24);
             this.用户信息管理ToolStripMenuItem.Text = "用户信息管理";
             // 
             // 图书管理ToolStripMenuItem
             // 
             this.图书管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuItemAddBook,
-            this.修改图书ToolStripMenuItem,
-            this.下架图书ToolStripMenuItem,
-            this.搜索图书ToolStripMenuItem});
+            this.itemModifyBook,
+            this.itemRemoveBook,
+            this.itemSearchBook});
             this.图书管理ToolStripMenuItem.Name = "图书管理ToolStripMenuItem";
-            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 30);
+            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
             this.图书管理ToolStripMenuItem.Text = "图书管理";
             // 
             // MenuItemAddBook
             // 
             this.MenuItemAddBook.Name = "MenuItemAddBook";
-            this.MenuItemAddBook.Size = new System.Drawing.Size(160, 30);
+            this.MenuItemAddBook.Size = new System.Drawing.Size(180, 24);
             this.MenuItemAddBook.Text = "添加图书";
             this.MenuItemAddBook.Click += new System.EventHandler(this.MenuItemAddBook_Click);
             // 
-            // 修改图书ToolStripMenuItem
+            // itemModifyBook
             // 
-            this.修改图书ToolStripMenuItem.Name = "修改图书ToolStripMenuItem";
-            this.修改图书ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
-            this.修改图书ToolStripMenuItem.Text = "修改图书";
+            this.itemModifyBook.Name = "itemModifyBook";
+            this.itemModifyBook.Size = new System.Drawing.Size(180, 24);
+            this.itemModifyBook.Text = "修改图书";
+            this.itemModifyBook.Click += new System.EventHandler(this.itemModifyBook_Click);
             // 
-            // 下架图书ToolStripMenuItem
+            // itemRemoveBook
             // 
-            this.下架图书ToolStripMenuItem.Name = "下架图书ToolStripMenuItem";
-            this.下架图书ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
-            this.下架图书ToolStripMenuItem.Text = "下架图书";
+            this.itemRemoveBook.Name = "itemRemoveBook";
+            this.itemRemoveBook.Size = new System.Drawing.Size(180, 24);
+            this.itemRemoveBook.Text = "下架图书";
+            this.itemRemoveBook.Click += new System.EventHandler(this.itemRemoveBook_Click);
             // 
-            // 搜索图书ToolStripMenuItem
+            // itemSearchBook
             // 
-            this.搜索图书ToolStripMenuItem.Name = "搜索图书ToolStripMenuItem";
-            this.搜索图书ToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
-            this.搜索图书ToolStripMenuItem.Text = "搜索图书";
+            this.itemSearchBook.Name = "itemSearchBook";
+            this.itemSearchBook.Size = new System.Drawing.Size(180, 24);
+            this.itemSearchBook.Text = "搜索图书";
+            this.itemSearchBook.Click += new System.EventHandler(this.itemSearchBook_Click);
             // 
             // 用户反馈ToolStripMenuItem
             // 
@@ -151,26 +154,26 @@
             this.图书评价管理ToolStripMenuItem,
             this.消息管理ToolStripMenuItem});
             this.用户反馈ToolStripMenuItem.Name = "用户反馈ToolStripMenuItem";
-            this.用户反馈ToolStripMenuItem.Size = new System.Drawing.Size(100, 30);
+            this.用户反馈ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
             this.用户反馈ToolStripMenuItem.Text = "用户反馈";
             // 
             // 图书评价管理ToolStripMenuItem
             // 
             this.图书评价管理ToolStripMenuItem.Name = "图书评价管理ToolStripMenuItem";
-            this.图书评价管理ToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
+            this.图书评价管理ToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
             this.图书评价管理ToolStripMenuItem.Text = "图书评价管理";
             // 
             // 消息管理ToolStripMenuItem
             // 
             this.消息管理ToolStripMenuItem.Name = "消息管理ToolStripMenuItem";
-            this.消息管理ToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
+            this.消息管理ToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
             this.消息管理ToolStripMenuItem.Text = "消息管理";
             // 
             // MenuItemLogout
             // 
             this.MenuItemLogout.ForeColor = System.Drawing.Color.Red;
             this.MenuItemLogout.Name = "MenuItemLogout";
-            this.MenuItemLogout.Size = new System.Drawing.Size(100, 30);
+            this.MenuItemLogout.Size = new System.Drawing.Size(105, 23);
             this.MenuItemLogout.Text = "退出登录";
             this.MenuItemLogout.Click += new System.EventHandler(this.MenuItemLogout_Click);
             // 
@@ -195,7 +198,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAdmin";
             this.Text = "FormAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -218,9 +221,9 @@
         private System.Windows.Forms.ToolStripMenuItem 用户信息管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 图书管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuItemAddBook;
-        private System.Windows.Forms.ToolStripMenuItem 修改图书ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 下架图书ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 搜索图书ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itemModifyBook;
+        private System.Windows.Forms.ToolStripMenuItem itemRemoveBook;
+        private System.Windows.Forms.ToolStripMenuItem itemSearchBook;
         private System.Windows.Forms.ToolStripMenuItem 用户反馈ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 图书评价管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 消息管理ToolStripMenuItem;
